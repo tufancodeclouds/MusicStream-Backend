@@ -38,6 +38,10 @@ app.get("/api/search", async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('MusicStream Backend is running!');
+});
+
 app.listen(PORT, () => {
   console.log(`Local server running at http://localhost:${PORT}`);
 });
